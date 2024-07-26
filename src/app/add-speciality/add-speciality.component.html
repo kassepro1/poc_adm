@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>Creer une Specialité</h2>
+<mat-dialog-content class="mat-typography" style="background-color: aliceblue" >
+
+<div class="example-container" style="width: 600px;">
+  <jsonforms
+    [data]="data"
+    [schema]="schema"
+    [uischema]="uischema"
+    [renderers]="renderers"
+  ></jsonforms>
+
+  </div>
+
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+</mat-dialog-actions>
